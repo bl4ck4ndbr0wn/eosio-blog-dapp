@@ -4,20 +4,20 @@
 ./first_time_setup.sh
 
 # # start blockchain and put in background
-./start_eosio_docker.sh --nolog
+./start_eosio_docker.sh
 
 # start mongodb and put in background
-./start_mongodb_docker.sh --nolog
+./start_mongodb_docker.sh
 
 echo "=== Running the Node.js Server ==="
 cd backend
-npm start --nolog
+npm start
 
 cd ..
 
 echo "=== Running the React Frontend ==="
 
 cd frontend
-npm start --nolog
+npm start
 
 cd ..
